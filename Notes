@@ -1,0 +1,63 @@
+##Python Overview (10)##
+	* Flexible programming language that has become the standard for academic researchers. 
+	* Packages versus language
+		* NLTK
+		* Pandas
+		* Numpy
+	* import
+		* import nltk - 'import' is a command, 'nltk' is a package
+		* from nltk import * - this says 'go to nltk and import everything' - save yourself and don't do this
+		* from nltk import concordance
+			OMG! What's the difference??
+			just importing the package, you have to call it every time, so nltk.concordance. Pulling in specific functions, you don't have to type nltk, but have to remember that that variable has already been used.
+	* It's a language with rules and vocabulary - multiple ways of writing things just like multiple ways of saying things. 
+	* Note about Object Oriented
+
+
+##Variables & Types (30)##
+	1. Variables - container for holding other things (notecards here)
+		* Rules about variables
+			* NO SPACES
+			* must be unique (unless you're overwriting something)
+			* cannot be a command Python already uses, or is already used by a package. 
+		* Examples - let's do them together!
+			Open iPython Notebook
+				x = 8
+				y = 2
+				x + y [shift]+[enter]
+				
+				z = x - y
+				print(z)
+				
+				Let's try another
+				a = 3
+				b = 4
+				a = b --- what do you think happened here? Let's find out
+				print(a)
+				print(b)
+				
+				Trivial for this example, but absolutely necessary for writing clear, understandable code
+				
+		* Common usage
+			afile = open('/Users/michellejohnson/Documents/Spanish_English_BYTs.csv', 'r')
+			my_file = afile.read()
+		
+		
+	2. Types
+		a. Strings
+			often given or passed in quotes. It doesn't matter singe or double 
+			words, Python can't see inside of this 
+		b. Lists
+		c. Dictionaries
+		d. Numbers
+			i. Integers
+			ii. Floats
+			
+			
+		
+##Conditionals (35)##
+
+Loops (30)
+Functions (25)
+Create/Import Library (20)
+
