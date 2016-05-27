@@ -44,18 +44,66 @@
 		
 		
 	2. Types
-		a. Strings
-			often given or passed in quotes. It doesn't matter singe or double 
-			words, Python can't see inside of this 
-		b. Lists
-		c. Dictionaries
-		d. Numbers
+		a. Numbers
 			i. Integers
-			ii. Floats
+			ii. Floats 
+		b.  Strings "  "
+			usually words, always things Python can't "evaluate"
+		c. Lists  [  ]
+			like a shopping list
+		d. Dictionaries {  }
+			key:value  pair - Keys are always unique - like your house key!
+			Values are not always unique... Let's say you are counting words, [(a:200), (the, 500), (at, 200)] would be fine. 
+			Useful for counting instances of things
+			
+	3. Type Examples
+	Going to go through a bunch of disconnected examples. The purpose here is to get acquainted with the way Python works. Can think of it like building a toolbox or a learning a new language. Tourists often learn a variety of stock phrases, but to actually communicate, you have to learn about how the pieces work.
+	
+		a. Numbers covered in Variables
+		
+		b. Strings
+			str1 = "Hello"
+			str2 = "GCDI DRI"
+			print(str1)
+			print (str1, str2)
+			str3 = str1 + str2
+			What happened? Why wasn't there a space between them?
+			Python can't evaluate inside of a string
+			How do we get a space??
+			srt1 + " " + str2
+			
+		c. Lists 
+			like a shopping list
+			groceries = ['apples', 'spinach', 'tofu']
+			print(groceries)
+			groceries.append('rice')
+			
+			print(groceries)
+			
+			You could set a new_variable here, like new_list = groceries.append(), but the original grocery list is still modified, so now you just have more variables and more confusion, so this is not ideal
+			Python counts the objects in a list. Python, however, is a mathematician, and begins counting at Zero, this takes a little getting used to, but comes natural very quickly
+			You can call an item in a list by telling Python which number item to pull out groceries[1] will return the second item in the list. 
+			
+			Lists are most often used for loops, which we will get to in the second half of this session
+			
+		d. Dictionaries
+			key:value pair
+			Most often used for counting things
+			my_dict = {('steak', 2), ('potatoes', 5), ('cucumber', 6)}
+			my_dict.keys()
+			my_dict.values()
+			my_dict.has_key('tofu')
+			
+			
+			
+
 			
 			
 		
 ##Conditionals (35)##
+
+
+#BREAK#
 
 Loops (30)
 Functions (25)
