@@ -1,33 +1,53 @@
 
-#Introduction to Python for Academic Researchers#
+# Introduction to Python for Academic Researchers
 
 Python is a **Language** that supports many **Packages**
 
-###Packages###
+### Packages
 
 * NLTK (Natural Language Toolkit) for *Text Analysis*
 * Pandas for *Data Analysis and Modeling* (DataFrames)
 * Numpy for *High Level Mathematical Functions*
 * MatPlotLib for *Making Graphs and Charts*
-* Literally thousands of libraries, you will probably only use about 5-10.
+
 
 How do I know which one to use? 
 
-* The Internet
-* Stack Overflow
-* Read the docs
-* Others doing similar work
+*The Internet*
 
-#Variables and Types#
+*Stack Overflow*
+
+*Read the docs*
+
+*Others doing similar work*
+
+# Variables and Types
 
 **Variables** are like a container for holding something
 
-This can be helpful because (*we will come back to these examples*)
+This can be helpful because:
+
+
 * sometimes things are long:
     * my_file = open('/Users/michellejohnson/Documents/Spanish_English_BYTs.csv', 'r')
+
+
 * sometimes you need a place to put something:
-    * love_density = love_words/all_words
+    * love_den = love_words/all_words
+
+
 * sometimes you will just need a variable!
+
+### Interactive Time!
+
+* Open Anaconda (green guitar pick)
+* Launch Notebook (will open in browser)
+* New (at top right hand side of page)
+
+
+To **run** a **cell** hit:
+    
+'Shift' + 'Enter'
 
 
 ```python
@@ -36,6 +56,7 @@ This can be helpful because (*we will come back to these examples*)
 x = 8
 y = 2
 x+y
+
 ```
 
 
@@ -58,47 +79,85 @@ print('a is', a)
 print('b is', b)
 ```
 
-#Types#
+## Types
 * Numbers
     * Integers
     * Floats 
 
+## Types
 * Strings "  " or ' ' *(this is so you can use apostrophes or quotes inside a string)*
     * usually words, always things Python can't "evaluate"
     * 'love'
     * 'Hello GCDI'
 
+## Types
 * Lists  [  ]
     * just like a shopping list
     * ['apples', 'bananas', 'kiwi']
     * [100, 200, 300]
-    
+
+## Types
 * Dictionaries {  }
-    * key:value  pair - Keys are always unique - like your house key!
-    * Key are always unique
+    * key:value  pair 
+    * Keys are always unique - like your house key!
     * Values are not always unique...
     * Useful for counting instances of things
         * Let's say you are counting words: 
         * {'a':200, 'the': 500, 'at': 200}
 
-* **List** versus **Dictionary**
+## Types
+**List** versus **Dictionary**
 * List is ordered, Dictionary is not
 * Lists allow look up by an **index**
 * Dictionaries allow look up by a **key**
 *More to come* 
 
-* We are **not** covering these here
-	* Sets 
-	    * Tuples(things grouped together, an unchangeable list)
-	    * Arrays (in Python, just use a list
-	* Texts (special (usually package-specific) type for words)
-	* DataFrame (specific to Pandas, like a spreadsheet or matrix)
+## Types
+*We are **not** covering these here*
 
-##Type Examples##
+* Sets 
+    * Tuples(things grouped together, an unchangeable list)
+    * Arrays (in Python, just use a list
+* Texts (special (usually package-specific) type for words)
+* DataFrame (specific to Pandas, like a spreadsheet or matrix)
 
-*Open a New iPython Notebook*
+### Type Examples
 
-Beginning with **Strings**
+**Integers**
+
+
+```python
+n = 5
+type(n)
+```
+
+
+
+
+    int
+
+
+
+### Type Examples
+
+**Floats**
+
+
+```python
+m = 5.1
+type(m)
+```
+
+
+
+
+    float
+
+
+
+### Type Examples
+
+**Strings**
 
 
 ```python
@@ -120,9 +179,11 @@ str4 = str1 + ' ' + str2
 print(str4)
 ```
 
-##Type Examples##
+### Type Examples
 
 **Lists**
+
+*Just like a shopping list* 
 
 
 ```python
@@ -141,7 +202,7 @@ print(my_list)
 my_list[1]
 ```
 
-##Type Examples##
+### Type Examples
 
 **Dictionaries**
 
@@ -191,7 +252,7 @@ my_dict['pie'] = 4
 print(my_dict)
 ```
 
-#Conditionals#
+# Conditionals
 
 aka "If-then statements"
 
@@ -203,8 +264,6 @@ Some style issues:
 
 
 ```python
-students = 60
-teachers = 2
 
 if students > teachers:
     print('Classroom')
@@ -212,7 +271,10 @@ if students < teachers:
     print('Conference')
 if teachers == students:
     print('Private School')
+
     
+students = 60
+teachers = 2
 ```
 
 Let's check on our original list (my_list should still be an active variable in your program)
@@ -241,8 +303,6 @@ if 'bagel' in my_list:
     print('Too many carbs')
 elif 'tomatoe' in my_list:
     print('So healthy!')
-else:
-    pass
 ```
 
 What happened? Why didn't anything print?
@@ -266,7 +326,7 @@ else:
     print('too low')
 ```
 
-#For Loops#
+# For Loops
 
 
 ```python
@@ -339,7 +399,7 @@ for item in my_dict.items():
     print("I'm gonna eat", item)
 ```
 
-##Combining For-Loops and If-Statements!!##
+## Combining For-Loops and If-Statements!!
 
 
 ```python
@@ -366,11 +426,9 @@ for food in my_list:
         print('No', food, '?')
 ```
 
-#Functions!#
+# Functions!
 
 Functions are little bits of code that you can use over and over again.
-
-(*they are the first step towards Object Oriented Programming*)
 
 * Python has some
 * You can write some yourself
@@ -424,31 +482,54 @@ Let's try again
 greet('Wanda and Floyd')
 ```
 
+**Another Tool!**
+
+input() - a way to get information directly from your user
+
+
+
+```python
+x = input('What is your favorite number? ')
+print('My favorite number is', x)
+```
+
+    What is your favorite number? 8
+    My fav number is 8
+
+
 Let's write a program to tell people how to write a book. 
 
 Hint: This program will require using a Function!
 
-Start with psuedocode
+Start with pseudocode
 
 
-Wait! What's psuedocode???
+Wait! What's pseudocode???
 
 Psuedocode is simplified code. 
 
 * Articulate in words what you need the program to do
+
+
 * Identify what you want to give it
+
+
 * Identify what you expect to get back
+
 * Identify the major steps
+
+
 * Tackle each major step individually 
     * Worry about other steps later
     * Write out in words every tiny step
     * Test to see if the major step worked
     * Repeat this step
-* Call your program
     
+    
+* Call your program
 
 I want to write a program that gives people advice about how to write a book.
-This program gets information from the user and tells them what they should do
+This program gets information from the user and tells them what they should do.
 
 * Inputs: time & ideas
 * Consider relationship between time and ideas, decide what advice to give
@@ -458,13 +539,44 @@ ideas = get number of ideas
 
 time = get amount of time
 
+Decide what advice to give:
+
+
+* if they have less time than ideas, they should make time.
+
+* if they have fewer ideas than time, they should get inspired.
+
+* if the two are equal, they will probably write a book.
+
 
 ```python
-Decide what advice to give
+#ideas = get number of ideas
+all_ideas = input('How many ideas do you have? ')
+#time = get amount of time
+all_time = input('How much time do you have? ')
+```
 
-if they have less time than ideas, they should make time.
-if they have more ideas than time, they should get inspired.
-if the two are equal, they will probably write a book.
+
+```python
+def book(ideas, time):
+    print('How to write a book')
+    #if they have less time than ideas, they should make time.
+    if time < ideas:
+        print('Make time!')
+    #if they have more ideas than time, they should get inspired.
+    elif time > ideas:
+        print('Get inspired')
+    #if the two are equal, they will probably write a book.
+    elif time == ideas:
+        print("Can't wait to read it!")
+    else: 
+        pass
+```
+
+
+```python
+#run program
+book(all_ideas, all_time)
 ```
 
 
@@ -485,26 +597,31 @@ def book(ideas, time):
     #if the two are equal, they will probably write a book.
     elif time == ideas:
         print("Can't wait to read it!")
+    else: 
+        pass
         
 #run program
 book(all_ideas, all_time)
 ```
 
-##Congratulations!! You just wrote your first program!!##
+## Congratulations!! 
+
+## You just wrote your first program!!
 
 Now let's look at some built-in functions!
 
-open()  opens a file
+open( )  opens a file
 
-read()  reads the file
+read( )  reads the file
 
-len()   gets length of an object (i.e., string, list, dictionary, etc.)
+len( )   gets length of an object (i.e., string, list, dictionary, etc.)
 
 Curious about all the built-in functions?
 
 https://docs.python.org/3/library/functions.html
 
-This is essentially what you are doing when you import a library. 
+This is essentially what you are doing when you import a library.
+
 Someone else already wrote all these little programs, and you are using them!
 
 Three ways to import libraries:
@@ -522,6 +639,10 @@ Three ways to import libraries:
 
 OMG! What's the difference??
 
+**Something useful!!**
+
+Now let's read in a csv file!
+
 
 ```python
 import csv
@@ -533,8 +654,6 @@ for row in my_file:
     print(len(row))
 ```
 
-
-```python
 Now you are ready to specialize your programming skills through
 
 * Cleaning Data 
@@ -542,4 +661,26 @@ Now you are ready to specialize your programming skills through
 * Analyzing Numerical Data
 * Making charts and graphs
 * So much more!!
+
+Now let's move to the **Command Line!!**
+
+1. open a Terminal Window
+2. Type the following command:
+
+    $ python
+
+
+
+3. Now you are using Python (to run a line of code, just hit 'Enter' not 'Shift'+'Enter'
+
+4. Let's try it out with this simple program
+    
+    x = 'I love GCDI'
+
+    len(x)
+   
+
+
+```python
+
 ```
