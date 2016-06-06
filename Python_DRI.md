@@ -1,5 +1,10 @@
 
 # Introduction to Python for Academic Researchers
+<br><br>
+## GCDRI June 7, 2016
+## Michelle McSweeney 
+## @MMcSweeney7
+## \#GCDRI
 
 ### First Half Lesson Plan:
 * Overview
