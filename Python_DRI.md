@@ -1,6 +1,21 @@
 
 # Introduction to Python for Academic Researchers
 
+### First Half Lesson Plan:
+* Overview
+* Variables & Types
+* Conditionals 
+
+~ Break ~ (*approximately*)
+
+
+### Second Half Lesson Plan
+
+* Loops
+* Functions
+* Psuedocode
+* Libraries
+
 Python is a **Language** that supports many **Packages**
 
 ### Packages
@@ -264,15 +279,16 @@ Some style issues:
 
 
 ```python
-
 if students > teachers:
     print('Classroom')
 if students < teachers:
     print('Conference')
 if teachers == students:
     print('Private School')
+```
 
-    
+
+```python
 students = 60
 teachers = 2
 ```
@@ -501,7 +517,7 @@ Let's write a program to tell people how to write a book.
 
 Hint: This program will require using a Function!
 
-Start with pseudocode
+Start with **pseudocode**
 
 
 Wait! What's pseudocode???
