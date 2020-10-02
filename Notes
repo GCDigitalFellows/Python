@@ -1,9 +1,19 @@
 ##Python Overview (10)##
 	* Flexible programming language that has become the standard for academic researchers. 
 	* Packages versus language
+	Python libraries
 		* NLTK
 		* Pandas
 		* Numpy
+		* TensorFlow
+		* Scikit-Learn
+		* Keras
+		* PyTorch
+		* LightGBM
+		* Eli5
+		* SciPy
+		* Theano
+		
 	* import
 		* import nltk - 'import' is a command, 'nltk' is a package
 		* from nltk import * - this says 'go to nltk and import everything' - save yourself and don't do this
